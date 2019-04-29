@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  www:
+    build:
+      context: www
+      dockerfile: Dockerfile-dev
+    container_name: derivaciones2-www-dev
+    image: derivaciones2-www-dev
+    entrypoint: 'tail -f /dev/null'
+    volumes:
+      - ./www:/workspace
+    ports:
+      - 9100:9100
+    environment:
+      - PORT=9100
+
+#2019-04-18
