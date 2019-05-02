@@ -53,7 +53,7 @@ class Editor<P> extends Component<P> {
           const elements = session.getTokens(rowIndex);
           result.push(elements);
         }
-        console.log(result)
+        // console.log(result)
       });
       new TokenTooltip(editor);
       languageTools.addCompleter(new DerivacionesCompleter());

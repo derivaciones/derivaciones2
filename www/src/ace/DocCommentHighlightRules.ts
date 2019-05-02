@@ -27,19 +27,19 @@ export class DocCommentHighlightRules{
     };
   };
 
-  getStartRule(start:string) {
+  getStartRule(next: string) {
     return {
       token : "comment.doc.start", // doc comment
       regex : "\\/\\*(?=\\*)",
-      next  : start
+      next  : next
     };
   };
 
-  getEndRule(start:string) {
+  getEndRule(next: string) {
     return {
       token : "comment.doc.end", // closing comment
       regex : "\\*\\/",
-      next  : start
+      next  : next
     };
   };
 

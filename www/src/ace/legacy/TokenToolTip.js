@@ -30,7 +30,7 @@
 
 var  ace = require('ace-builds');
 
-var dom = ace.require("ace/lib/dom");
+//var dom = ace.require("ace/lib/dom");
 var oop = ace.require("ace/lib/oop");
 var event = ace.require("ace/lib/event");
 var Range = ace.require("ace/range").Range;
